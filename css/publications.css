@@ -1,0 +1,203 @@
+/* Publications page specific styles */
+
+/* Banner image */
+.publications-banner {
+  background-image: url('https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+/* Publications section */
+.publications-section {
+  padding: var(--spacing-section) 0;
+}
+
+.publications-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+/* Publications filter */
+.publications-filter {
+  margin: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 1px solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-size: 0.9rem;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-color: var(--color-primary);
+}
+
+/* Publications list */
+.publications-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.publications-list h3 {
+  margin: var(--spacing-xl) 0 var(--spacing-lg);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--spacing-sm);
+}
+
+.publication-item {
+  display: flex;
+  margin-bottom: var(--spacing-xl);
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.publication-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.publication-year {
+  flex: 0 0 80px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.publication-content {
+  flex: 1;
+  padding: var(--spacing-lg);
+}
+
+.publication-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.publication-journal {
+  font-style: italic;
+  color: var(--color-tertiary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.publication-doi,
+.publication-link {
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.publication-link a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.publication-abstract {
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-muted);
+}
+
+.publication-abstract p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Research interests section */
+.research-interests {
+  background-color: var(--color-light);
+  padding: var(--spacing-section) 0;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.interest-card {
+  background-color: var(--color-background);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.interest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.interest-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.interest-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .publication-item {
+    flex-direction: column;
+  }
+  
+  .publication-year {
+    width: 100%;
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .interests-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .publication-content {
+    padding: var(--spacing-md);
+  }
+}
