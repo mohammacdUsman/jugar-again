@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/education.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="header-container">
             <h1 class="logo fade-in">SA</h1>
             <nav>
@@ -34,19 +35,77 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </header> -->
 
-    <main>
+
+    <header class="sticky top-0 z-50 bg-white shadow-md px-4 py-3">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
+      <!-- Logo and Name -->
+      <a href="/" class="flex items-center gap-3">
+        <img src="./images/jugar black.svg" alt="Logo" class="w-10 h-10 rounded-full shadow-md object-cover" />
+        <span class="text-xl md:text-2xl font-extrabold text-">Shan Ali</span>
+      </a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:block">
+        <ul class="flex flex-wrap gap-6 text-base font-medium text-gray-700">
+          <li><a href="index.html" class=" hover:text-yellow-600">Home</a></li>
+          <li><a href="education.html" class="text-blue-600 hover:text-yellow-600">Education</a></li>
+          <li><a href="work-experience.html" class="hover:text-yellow-600">Experience</a></li>
+          <li><a href="publications.html" class="hover:text-yellow-600">Publications</a></li>
+          <li><a href="awards.html" class="hover:text-yellow-600">Awards</a></li>
+          <li><a href="volunteering.html" class="hover:text-yellow-600">Volunteering</a></li>
+          <li><a href="online-courses.html" class="hover:text-yellow-600">Courses</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn"
+        class="md:hidden flex items-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <svg class="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="2" />
+          <circle cx="12" cy="5" r="2" />
+          <circle cx="12" cy="19" r="2" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 bg-white shadow rounded-b">
+      <ul class="flex flex-col gap-3 text-base font-medium text-gray-700">
+        <li><a href="index.html" class=" hover:text-yellow-600">Home</a></li>
+        <li><a href="education.html" class="text-blue-600 hover:text-yellow-600">Education</a></li>
+        <li><a href="work-experience.html" class="hover:text-yellow-600">Experience</a></li>
+        <li><a href="publications.html" class="hover:text-yellow-600">Publications</a></li>
+        <li><a href="awards.html" class="hover:text-yellow-600">Awards</a></li>
+        <li><a href="volunteering.html" class="hover:text-yellow-600">Volunteering</a></li>
+        <li><a href="online-courses.html" class="hover:text-yellow-600">Courses</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      btn.addEventListener('click', function () {
+        menu.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+    <div class="m mt-0">
         <section class="page-banner education-banner">
             <div class="banner-content">
-                <h1 class="slide-up">Education</h1>
-            </div>
+  <h1 class="slide-up" style="font-family: 'Inter', sans-serif; font-weight: bold; letter-spacing: 2px; font-size: 2.5rem;">
+    EDUCATION
+  </h1>
+</div>
         </section>
 
         <section class="education-section fade-in">
             <div class="container">
                 <div class="education-intro">
-                    <h2>Academic Background</h2>
+                    <h2><strong>Academic Background</strong></h2>
                     <p>My educational journey reflects a dedication to legal scholarship and a commitment to understanding the evolving intersection of law and technology.</p>
                 </div>
 
@@ -55,6 +114,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content slide-in-right">
                             <div class="education-card">
+                                
                                 <div class="education-period">2023 – Present</div>
                                 <h3>Ph.D. Law Scholar</h3>
                                 <h4>University of Padova</h4>
@@ -163,7 +223,9 @@
         </section>
     </main>
 
-    <footer>
+    <!-- <footer>
+
+    
         <div class="footer-container">
             <div class="footer-info">
                 <h3>Shan Ali</h3>
@@ -191,6 +253,87 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Shan Ali. All rights reserved.</p>
         </div>
-    </footer>
+    </footer> -->
+
+    
+  <!-- Footer -->
+ <div class="text-gray-400 body-font bg-black relative" style="background-image: url('./images/footer.jpg'); background-size: cover; background-position: center;">
+  <div class="container px-5 py-24 mx-auto flex md:items-start md:flex-row md:flex-nowrap flex-wrap flex-col" style="background: rgba(0,0,0,0.7);">
+    <!-- Left section: Name & Contact -->
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+        
+        <span class="ml-3 text-xl" style="color: #FFD700;">Shan Ali</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-400">Via Giovanni Battista Tiepolo, 54, 35129 Padova PD, Italy</p>
+      <p class="text-sm">Email: <a href="mailto:shanali.edu@gmail.com" class="underline">shanali.edu@gmail.com</a></p>
+      <p class="text-sm">Phone: (+39) 348 818 4787</p>
+    </div>
+
+    <!-- Right sections -->
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <!-- Quick Links -->
+      <div class="lg:w-1/2 md:w-full w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3" style="color: #FFD700;">Quick Links</h2>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
+          <a href="about.html" class="text-gray-400 hover:text-white">About</a>
+          <a href="awards.html" class="text-gray-400 hover:text-white">Awards</a>
+          <a href="education.html" class="text-gray-400 hover:text-white">Education</a>
+          <a href="work-experience.html" class="text-gray-400 hover:text-white">Experience</a>
+          <a href="volunteering.html" class="text-gray-400 hover:text-white">Volunteering</a>
+          <a href="online-courses.html" class="text-gray-400 hover:text-white">Online Courses</a>
+          <a href="publications.html" class="text-gray-400 hover:text-white">Publications</a>
+          <a href="contact.html" class="text-gray-400 hover:text-white">Contact</a>
+        </div>
+      </div>
+      <!-- Connect -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mt-6 md:mt-0">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3" style="color: #FFD700;">Connect</h2>
+        <nav class="list-none">
+          <li><a href="https://www.linkedin.com/in/shan-ali-119443203" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+          <li><a href="skype:shanadvocate@outlook" class="text-gray-400 hover:text-white">Skype</a></li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom section -->
+  <div class="bg-gray-900">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Shan Ali. All rights reserved.</p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="#" class="text-gray-500 hover:text-white">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path
+              d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg>
+        </a>
+        <a href="#" class="ml-3 text-gray-500 hover:text-white">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+          </svg>
+        </a>
+        <a href="#" class="ml-3 text-gray-500 hover:text-white">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+          </svg>
+        </a>
+        <a href="#" class="ml-3 text-gray-500 hover:text-white">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" stroke="none" />
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
 </body>
 </html>
