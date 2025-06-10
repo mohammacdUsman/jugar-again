@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Courses - Shan Ali</title>
+    <title>Work Experience - Shan Ali</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/online-courses.css">
+    <link rel="stylesheet" href="css/work-experience.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <header class="sticky top-0 z-50 bg-white shadow-md px-4 py-3">
     <div class="flex justify-between items-center max-w-7xl mx-auto">
       <!-- Logo and Name -->
@@ -25,7 +26,7 @@
         <ul class="flex flex-wrap gap-6 text-base font-medium text-gray-700">
           <li><a href="index.html" class=" hover:text-yellow-600">Home</a></li>
           <li><a href="education.html" class="hover:text-yellow-600">Education</a></li>
-          <li><a href="work-experience.html" class="hover:text-yellow-600">Experience</a></li>
+          <li><a href="work-experience.html" class=" hover:text-yellow-600">Experience</a></li>
           <li><a href="publications.html" class="hover:text-yellow-600">Publications</a></li>
           <li><a href="awards.html" class="hover:text-yellow-600">Awards</a></li>
           <li><a href="volunteering.html" class="hover:text-yellow-600">Volunteering</a></li>
@@ -48,7 +49,7 @@
       <ul class="flex flex-col gap-3 text-base font-medium text-gray-700">
         <li><a href="index.html" class=" hover:text-yellow-600">Home</a></li>
         <li><a href="education.html" class="hover:text-yellow-600">Education</a></li>
-        <li><a href="work-experience.html" class="hover:text-yellow-600">Experience</a></li>
+        <li><a href="work-experience.html" class=" hover:text-yellow-600">Experience</a></li>
         <li><a href="publications.html" class="hover:text-yellow-600">Publications</a></li>
         <li><a href="awards.html" class="hover:text-yellow-600">Awards</a></li>
         <li><a href="volunteering.html" class="hover:text-yellow-600">Volunteering</a></li>
@@ -58,219 +59,505 @@
     </div>
   </header>
 
-    <div>
-        <section class="page-banner courses-banner">
-            <div class="banner-content">
-                <h1 class="slide-up" style="font-family: 'Inter', sans-serif; font-weight: bold; letter-spacing: 2px; font-size: 2.5rem;">
-    ONLINE COURSES</h1>
+    <!-- Hero Section with Background Image -->
+    <section class="hero-bg text-white py-20 relative overflow-hidden" style="background-image: url('./images/hhh.png'); background-size: cover; background-position: center;">
+        
+        <div class=" max-w-7xl mx-auto px-4 text-center relative z-10">
+            <h1 class="text-white text-5xl md:text-6xl font-bold mb-6 tracking-tight animate-fade-in-up">ONLINE COURSES</h1>
+            <div class="w-24 h-1 bg-white mx-auto animate-fade-in-up delay-200"></div>
+            <p class="text-xl text-gray-200 mt-6 max-w-2xl mx-auto animate-fade-in-up delay-300">
+                Advancing legal expertise through continuous learning and professional development
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-black mb-6 animate-on-scroll animate-fade-in-up">Continuous Learning</h2>
+            <p class="text-lg text-gray-700 leading-relaxed animate-on-scroll animate-fade-in-up delay-200">
+                My commitment to professional development extends beyond formal education. I regularly pursue specialized
+                online courses to stay current with emerging legal trends, technologies, and interdisciplinary approaches.
+                These courses complement my formal education and inform my research and practice.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center gap-4 mb-8 animate-on-scroll animate-slide-in-left">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.707A1 1 0 013 7V4z"></path>
+                </svg>
+                <h3 class="text-lg font-semibold text-black">Filter by Category</h3>
             </div>
-        </section>
-
-        <section class="courses-section fade-in">
-            <div class="container">
-                <div class="courses-intro">
-                    <h2>Continuous Learning</h2>
-                    <p>My commitment to professional development extends beyond formal education. I regularly pursue specialized online courses to stay current with emerging legal trends, technologies, and interdisciplinary approaches. These courses complement my formal education and inform my research and practice.</p>
-                </div>
-
-                <div class="courses-filter">
-                    <h3>Filter by Category</h3>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All Courses</button>
-                        <button class="filter-btn" data-filter="tech-law">Technology & Law</button>
-                        <button class="filter-btn" data-filter="business-law">Business Law</button>
-                        <button class="filter-btn" data-filter="privacy">Privacy & Data Protection</button>
-                    </div>
-                </div>
-
-                <div class="courses-grid">
-                    <div class="course-card slide-in-right" data-category="tech-law">
-                        <div class="course-platform">Coursera</div>
-                        <div class="course-content">
-                            <h3>AI & Law</h3>
-                            <p class="course-provider">Authorized by Lund University</p>
-                            <div class="course-description">
-                                <p>This course explores the intersection of artificial intelligence and legal frameworks, addressing questions of AI regulation, liability, and ethical considerations in automated decision-making.</p>
-                            </div>
-                            <div class="course-skills">
-                                <h4>Key Topics:</h4>
-                                <ul>
-                                    <li>AI Regulatory Frameworks</li>
-                                    <li>Liability Issues in AI Systems</li>
-                                    <li>Ethical Dimensions of AI in Legal Practice</li>
-                                    <li>Predictive Justice and Legal Analytics</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="course-card slide-in-left" data-category="tech-law">
-                        <div class="course-platform">Coursera</div>
-                        <div class="course-content">
-                            <h3>Artificial Intelligence and Legal Issues</h3>
-                            <p class="course-provider">Authorized by Politecnico di Milano</p>
-                            <div class="course-description">
-                                <p>This comprehensive course examines the legal challenges presented by artificial intelligence technologies, focusing on regulatory approaches, governance frameworks, and comparative legal analysis across jurisdictions.</p>
-                            </div>
-                            <div class="course-skills">
-                                <h4>Key Topics:</h4>
-                                <ul>
-                                    <li>AI Governance Models</li>
-                                    <li>Intellectual Property in AI-Generated Content</li>
-                                    <li>Algorithmic Transparency and Accountability</li>
-                                    <li>International Approaches to AI Regulation</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="course-card slide-in-right" data-category="privacy">
-                        <div class="course-platform">Coursera</div>
-                        <div class="course-content">
-                            <h3>Privacy Law and Data Protection</h3>
-                            <p class="course-provider">Authorized by University of Pennsylvania</p>
-                            <div class="course-description">
-                                <p>This course provides an in-depth analysis of privacy laws and data protection frameworks, examining regulatory approaches to personal data management across different jurisdictions and sectors.</p>
-                            </div>
-                            <div class="course-skills">
-                                <h4>Key Topics:</h4>
-                                <ul>
-                                    <li>GDPR Compliance Principles</li>
-                                    <li>Cross-Border Data Transfers</li>
-                                    <li>Privacy by Design Frameworks</li>
-                                    <li>Sectoral Privacy Regulations</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="course-card slide-in-left" data-category="tech-law privacy">
-                        <div class="course-platform">Coursera</div>
-                        <div class="course-content">
-                            <h3>Cloud Computing Law: Data Protection and Cybersecurity</h3>
-                            <p class="course-provider">Authorized by Queen Mary University of London</p>
-                            <div class="course-description">
-                                <p>This specialized course explores the complex legal landscape of cloud computing, focusing on data protection requirements, cybersecurity obligations, and contractual frameworks for cloud service providers.</p>
-                            </div>
-                            <div class="course-skills">
-                                <h4>Key Topics:</h4>
-                                <ul>
-                                    <li>Cloud Service Provider Liability</li>
-                                    <li>Data Localization Requirements</li>
-                                    <li>Cloud Security Compliance Frameworks</li>
-                                    <li>Incident Response Legal Obligations</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="course-card slide-in-right" data-category="business-law">
-                        <div class="course-platform">Coursera</div>
-                        <div class="course-content">
-                            <h3>European Business Law: Understanding the Fundamentals</h3>
-                            <p class="course-provider">Authorized by Lund University</p>
-                            <div class="course-description">
-                                <p>This foundational course provides a comprehensive overview of European Union business law principles, examining the regulatory framework that governs commercial activities within the EU single market.</p>
-                            </div>
-                            <div class="course-skills">
-                                <h4>Key Topics:</h4>
-                                <ul>
-                                    <li>EU Legal System Structure</li>
-                                    <li>Internal Market Principles</li>
-                                    <li>Competition Law Framework</li>
-                                    <li>Consumer Protection Regulations</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="course-card slide-in-left" data-category="business-law">
-                        <div class="course-platform">Coursera</div>
-                        <div class="course-content">
-                            <h3>European Business Law: Doing Business in Europe</h3>
-                            <p class="course-provider">Authorized by Lund University</p>
-                            <div class="course-description">
-                                <p>This advanced course builds on fundamental European business law principles to examine practical aspects of conducting business within the European Union, including market entry strategies, regulatory compliance, and cross-border operations.</p>
-                            </div>
-                            <div class="course-skills">
-                                <h4>Key Topics:</h4>
-                                <ul>
-                                    <li>Cross-Border Business Establishment</li>
-                                    <li>EU Digital Single Market</li>
-                                    <li>Corporate Mobility Within the EU</li>
-                                    <li>Harmonization of Business Regulations</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex flex-wrap gap-3">
+                <button class="filter-btn px-6 py-3 bg-black text-white rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 active animate-on-scroll animate-scale-in" data-filter="all">
+                    All Courses <span class="ml-2 bg-gray-700 text-white px-2 py-1 rounded text-sm">6</span>
+                </button>
+                <button class="filter-btn px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:bg-gray-100 animate-on-scroll animate-scale-in delay-100" data-filter="tech-law">
+                    Technology & Law <span class="ml-2 bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm">4</span>
+                </button>
+                <button class="filter-btn px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:bg-gray-100 animate-on-scroll animate-scale-in delay-200" data-filter="business-law">
+                    Business Law <span class="ml-2 bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm">2</span>
+                </button>
+                <button class="filter-btn px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:bg-gray-100 animate-on-scroll animate-scale-in delay-300" data-filter="privacy">
+                    Privacy & Data Protection <span class="ml-2 bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm">1</span>
+                </button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="learning-approach fade-in">
-            <div class="container">
-                <h2>Learning Philosophy</h2>
-                <div class="approach-content">
-                    <blockquote>
-                        "In the rapidly evolving intersection of law and technology, continuous learning is not optional but essential. My approach combines structured educational experiences with practical application to develop a comprehensive understanding of emerging legal challenges."
-                    </blockquote>
-                    <div class="approach-pillars">
-                        <div class="approach-pillar">
-                            <h3>Interdisciplinary Integration</h3>
-                            <p>Combining legal knowledge with technical understanding to address complex challenges at the intersection of disciplines.</p>
-                        </div>
-                        <div class="approach-pillar">
-                            <h3>Practical Application</h3>
-                            <p>Translating theoretical frameworks into practical legal solutions for real-world technology and business challenges.</p>
-                        </div>
-                        <div class="approach-pillar">
-                            <h3>Continuous Development</h3>
-                            <p>Maintaining current knowledge through ongoing education in emerging legal trends, technologies, and regulatory approaches.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="future-learning fade-in">
-            <div class="container">
-                <h2>Current Learning Focus</h2>
-                <div class="focus-areas">
-                    <div class="focus-area">
-                        <h3>Blockchain Governance Models</h3>
-                        <p>Exploring decentralized governance frameworks and their legal implications for organizational structures and decision-making processes.</p>
-                    </div>
-                    <div class="focus-area">
-                        <h3>Digital Asset Regulation</h3>
-                        <p>Examining evolving regulatory approaches to tokenized assets, NFTs, and digital currencies across multiple jurisdictions.</p>
-                    </div>
-                    <div class="focus-area">
-                        <h3>AI Ethics and Governance</h3>
-                        <p>Investigating ethical frameworks and governance models for artificial intelligence systems in legal and business contexts.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section fade-in">
-            <div class="container">
-                <h2>Professional Development</h2>
-                <p>Interested in my professional qualifications and research? Explore my academic background and published work.</p>
-                <div class="cta-buttons">
-                    <a href="education.html" class="btn primary-btn">View Education</a>
-                    <a href="publications.html" class="btn secondary-btn">View Publications</a>
-                </div>
-            </div>
-        </section>
+    <!-- Courses Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="courses-grid">
+                
+                <!-- AI & Law Course -->
+<div class="relative course-card border border-transparent hover:border-black transition-all duration-300 rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll animate-fade-in-up delay-100" data-category="tech-law">
+    
+    <!-- Completion Badge -->
+    <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg z-10 shadow-md">
+        Completed
     </div>
 
-     <!-- Footer -->
+    <div class="h-48 overflow-hidden">
+        <img src="./images/AI & Law.png" alt="AI & Law" class="course-image w-full h-full object-cover">
+    </div>
+    
+    <div class="p-6">
+        <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 border border-black text-black text-sm rounded-full">Coursera</span>
+            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+            </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-black mb-2">AI & Law</h3>
+        <p class="text-sm text-gray-600 mb-4">Authorized by Lund University</p>
+        <p class="text-gray-700 text-sm mb-6 line-clamp-3">
+            This course examines the relationship between artificial intelligence and legal systems, focusing on the challenges of AI regulation, liability issues, and ethical considerations in automated decision-making.
+        </p>
+
+        <div class="mb-6">
+            <h4 class="font-semibold text-black mb-3 flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                Key Topics:
+            </h4>
+            <ul class="space-y-1">
+                <li class="text-sm text-gray-600 flex items-start gap-2">
+                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                    AI Regulatory Frameworks
+                </li>
+                <li class="text-sm text-gray-600 flex items-start gap-2">
+                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                    Liability Issues in AI Systems
+                </li>
+                <li class="text-sm text-gray-600 flex items-start gap-2">
+                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                    Predictive Justice and Legal Analytics
+                </li>
+                <li class="text-sm text-gray-600 flex items-start gap-2">
+                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                    Regulation and Legal Compliance
+                </li>
+                <li class="text-sm text-gray-500 italic">+2 more topics</li>
+            </ul>
+        </div>
+
+        <a href="https://coursera.org/verify/4NMQJXPUD9HS" target="_blank" class="w-full bg-black text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 flex items-center justify-center gap-2">
+            View Certificate
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+
+                <!-- Artificial Intelligence and Legal Issues -->
+                <div class="relative course-card border border-transparent hover:border-black transition-all duration-300 rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll animate-fade-in-up delay-100" data-category="tech-law">
+                  <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg z-10 shadow-md">
+        Completed
+    </div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="./images/Artificial Intelligence and Legal Issues .png" alt="AI Legal Issues" class="course-image w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 border border-black text-black text-sm rounded-full">Coursera</span>
+                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-2">Artificial Intelligence and Legal Issues</h3>
+                        <p class="text-sm text-gray-600 mb-4">Authorized by Politecnico di Milano</p>
+                        <p class="text-gray-700 text-sm mb-6 line-clamp-3">
+                            This comprehensive course examines the legal challenges presented by artificial intelligence technologies, focusing on regulatory approaches, governance frameworks, and comparative legal analysis.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-black mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                Key Topics:
+                            </h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    AI Governance Models
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Intellectual Property in AI-Generated Content
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Algorithmic Transparency and Accountability
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    International Approaches to AI Regulation
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://coursera.org/verify/376VDQ6U6AYU" target="_blank" class="w-full bg-black text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 flex items-center justify-center gap-2">
+                            View Certificate
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Privacy Law and Data Protection -->
+                <div class="relative course-card border border-transparent hover:border-black transition-all duration-300 rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll animate-fade-in-up delay-100" data-category="privacy-law">
+                    <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg z-10 shadow-md">
+        Completed
+    </div>
+                  <div class="h-48 overflow-hidden">
+                        <img src="./images/Privacy Law and Data Protection.png" alt="Privacy Law" class="course-image w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 border border-black text-black text-sm rounded-full">Coursera</span>
+                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-2">Privacy Law and Data Protection</h3>
+                        <p class="text-sm text-gray-600 mb-4">Authorized by University of London</p>
+                        <p class="text-gray-700 text-sm mb-6 line-clamp-3">
+                            This advanced course delves into practical legal issues for businesses operating within the EU, covering compliance, competition law, dispute resolution, and cross-border legal strategies.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-black mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                Key Topics:
+                            </h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    General Data Protection Regulation (GDPR)
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Privacy-by-Design Principles
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Cross-Border Data Transfer
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Data Breach Notification Requirements
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://coursera.org/verify/R78GMUZD8S6Z" target="_blank" class="w-full bg-black text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 flex items-center justify-center gap-2">
+                            View Certificate
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cloud Computing Law -->
+                <div class="relative course-card border border-transparent hover:border-black transition-all duration-300 rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll animate-fade-in-up delay-100" data-category="tech-law">
+                    <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg z-10 shadow-md">
+        Completed
+    </div>
+                  <div class="h-48 overflow-hidden">
+                        <img src="./images/Cloud Computing Law .png" alt="Cloud Computing Law" class="course-image w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 border border-black text-black text-sm rounded-full">Coursera</span>
+                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-2">Cloud Computing Law</h3>
+                        <p class="text-sm text-gray-600 mb-4">Authorized by University of London</p>
+                        <p class="text-gray-700 text-sm mb-6 line-clamp-3">
+                            This course covers the legal implications of cloud technologies, addressing contract management, data sovereignty, service level agreements (SLAs), and jurisdictional issues in the cloud environment.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-black mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                Key Topics:
+                            </h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Cloud Service Agreements
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Jurisdiction and Data Localization
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Liability and Indemnity Clauses
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Regulatory Compliance in Cloud Environments
+                                </li>
+                                <li class="text-sm text-gray-500 italic">+1 more topic</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/TTEWJN22WQ6A" target="_blank" class="w-full bg-black text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 flex items-center justify-center gap-2">
+                            View Certificate
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- European Business Law: Understanding the Fundamentals -->
+                <div class="relative course-card border border-transparent hover:border-black transition-all duration-300 rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll animate-fade-in-up delay-100" data-category="business-law">
+                    <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg z-10 shadow-md">
+        Completed
+    </div>
+                  <div class="h-48 overflow-hidden">
+                        <img src="./images/European Business Law Understanding the Fundamentals.png" alt="EU Business Law" class="course-image w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 border border-black text-black text-sm rounded-full">Coursera</span>
+                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-2">European Business Law: Understanding the Fundamentals</h3>
+                        <p class="text-sm text-gray-600 mb-4">Authorized by Lund University</p>
+                        <p class="text-gray-700 text-sm mb-6 line-clamp-3">
+                            This course offers a foundational understanding of the core principles of European business law, including internal market rules, EU institutions, and legal reasoning within the EU context.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-black mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                Key Topics:
+                            </h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    EU Legal System & Institutions
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Free Movement of Goods, Services, and People
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    EU Lawmaking and Legal Reasoning
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Preliminary Ruling Procedure
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://coursera.org/verify/MUG5AS9GJY2X" target="_blank" class="w-full bg-black text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 flex items-center justify-center gap-2">
+                            View Certificate
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- European Business Law: Doing Business in Europe -->
+                <div class="relative course-card border border-transparent hover:border-black transition-all duration-300 rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll animate-fade-in-up delay-100" data-category="business-law">
+                   <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg z-10 shadow-md">
+        Completed
+    </div>
+                  <div class="h-48 overflow-hidden">
+                        <img src="./images/European Business Law Doing Business in Europe .png" alt="EU Business Practice" class="course-image w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 border border-black text-black text-sm rounded-full">Coursera</span>
+                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-2">European Business Law: Doing Business in Europe</h3>
+                        <p class="text-sm text-gray-600 mb-4">Authorized by Lund University</p>
+                        <p class="text-gray-700 text-sm mb-6 line-clamp-3">
+                            This advanced course delves into practical legal issues for businesses operating within the EU, covering compliance, competition law, dispute resolution, and cross-border legal strategies.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-black mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                Key Topics:
+                            </h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    EU Business Regulations
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Competition Law & Antitrust
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Cross-border Dispute Resolution
+                                </li>
+                                <li class="text-sm text-gray-600 flex items-start gap-2">
+                                    <span class="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                                    Intellectual Property and Consumer Protection
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://coursera.org/verify/XR3P9X9SP9QG" target="_blank" class="w-full bg-black text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 flex items-center justify-center gap-2">
+                            View Certificate
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Philosophy -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-black text-center mb-12 animate-on-scroll animate-fade-in-up">Learning Philosophy</h2>
+
+            <blockquote class="text-xl text-gray-700 text-center mb-12 italic max-w-4xl mx-auto animate-on-scroll animate-fade-in-up delay-200">
+                "In the rapidly evolving intersection of law and technology, continuous learning is not optional but
+                essential. My approach combines structured educational experiences with practical application to develop a
+                comprehensive understanding of emerging legal challenges."
+            </blockquote>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg p-6 text-center bg-white animate-on-scroll animate-scale-in delay-100">
+                    <div class="flex justify-center mb-4 text-black">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-4">Interdisciplinary Integration</h3>
+                    <p class="text-gray-700">Combining legal knowledge with technical understanding to address complex challenges at the intersection of disciplines.</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-6 text-center bg-white animate-on-scroll animate-scale-in delay-200">
+                    <div class="flex justify-center mb-4 text-black">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-4">Practical Application</h3>
+                    <p class="text-gray-700">Translating theoretical frameworks into practical legal solutions for real-world technology and business challenges.</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-6 text-center bg-white animate-on-scroll animate-scale-in delay-300">
+                    <div class="flex justify-center mb-4 text-black">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-4">Continuous Development</h3>
+                    <p class="text-gray-700">Maintaining current knowledge through ongoing education in emerging legal trends, technologies, and regulatory approaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Learning Focus -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-black text-center mb-12 animate-on-scroll animate-fade-in-up">Current Learning Focus</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border-l-4 border-l-black bg-gray-50 p-6 animate-on-scroll animate-slide-in-left delay-100">
+                    <h3 class="text-xl font-bold text-black mb-4">Blockchain Governance Models</h3>
+                    <p class="text-gray-700">Exploring decentralized governance frameworks and their legal implications for organizational structures and decision-making processes.</p>
+                </div>
+
+                <div class="border-l-4 border-l-black bg-gray-50 p-6 animate-on-scroll animate-slide-in-left delay-200">
+                    <h3 class="text-xl font-bold text-black mb-4">Digital Asset Regulation</h3>
+                    <p class="text-gray-700">Examining evolving regulatory approaches to tokenized assets, NFTs, and digital currencies across multiple jurisdictions.</p>
+                </div>
+
+                <div class="border-l-4 border-l-black bg-gray-50 p-6 animate-on-scroll animate-slide-in-left delay-300">
+                    <h3 class="text-xl font-bold text-black mb-4">AI Ethics and Governance</h3>
+                    <p class="text-gray-700">Investigating ethical frameworks and governance models for artificial intelligence systems in legal and business contexts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white text-black">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 animate-on-scroll animate-fade-in-up">Professional Development</h2>
+            <p class="text-lg text-black mb-8 animate-on-scroll animate-fade-in-up delay-200">
+                Interested in my professional qualifications and research? Explore my academic background and published work.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="px-8 py-3 border border-sky-600 text-black rounded-lg font-medium transition-all duration-300 hover:bg-slate-600 hover:text-black animate-on-scroll animate-scale-in delay-300">
+                    View Education
+                </a>
+                <a href="#" class="px-8 py-3 border border-sky-600 text-black rounded-lg font-medium transition-all duration-300 hover:bg-slate-600 hover:text-black animate-on-scroll animate-scale-in delay-400">
+                    View Publications
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
  <div class="text-gray-400 body-font bg-black relative" style="background-image: url('./images/footer.jpg'); background-size: cover; background-position: center;">
   <div class="container px-5 py-24 mx-auto flex md:items-start md:flex-row md:flex-nowrap flex-wrap flex-col" style="background: rgba(0,0,0,0.7);">
     <!-- Left section: Name & Contact -->
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-        
         <span class="ml-3 text-xl" style="color: #FFD700;">Shan Ali</span>
       </a>
       <p class="mt-2 text-sm text-gray-400">Via Giovanni Battista Tiepolo, 54, 35129 Padova PD, Italy</p>
@@ -343,5 +630,90 @@
     </div>
   </div>
 </div>
+
+
+    <script>
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const courseCards = document.querySelectorAll('.course-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-black', 'text-white');
+                    btn.classList.add('border', 'border-gray-300', 'text-gray-700');
+                });
+                
+                button.classList.remove('border', 'border-gray-300', 'text-gray-700');
+                button.classList.add('active', 'bg-black', 'text-white');
+                
+                // Filter courses with animation
+                courseCards.forEach((card, index) => {
+                    const category = card.getAttribute('data-category');
+                    
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations (Fixed)
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('animate-on-scroll'); // Trigger animation by removing hidden class
+            observer.unobserve(entry.target); // Optional: stop observing after animation
+        }
+    });
+}, observerOptions);
+
+// Observe all elements with animate-on-scroll class
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+});
+
+// +
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add parallax effect to hero background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-bg');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
 </body>
 </html>
